@@ -10,10 +10,9 @@ const BarChart = () => {
     const svgRef = useRef();
 
     useEffect(() => {
-        //  setting up svg container
 
-        const w = 400;
-        const h = 300;
+        const w = 500;
+        const h = 400;
         const svg = d3.select(svgRef.current)
             .attr('width', w)
             .attr('height', h)
@@ -21,7 +20,6 @@ const BarChart = () => {
             .style('margin-top', '75px')
 
 
-        //setting the scaling
 
         const xScale = d3.scaleBand()
             .domain(data.map((val, i) => i))
@@ -33,7 +31,6 @@ const BarChart = () => {
 
 
 
-        //setting the axes
 
         const xAxis = d3.axisBottom(xScale)
             .ticks(data.length);
