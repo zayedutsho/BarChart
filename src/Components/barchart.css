@@ -1,0 +1,14 @@
+.bar {
+
+    text-align: center;
+    color: black;
+    background-color: white;
+    height: 80vh;
+    fill: #40128B;
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    border: 1px solid skyblue;
+    border-radius: 50px;
+    box-shadow: 15px 10px 8px #888888
+}
